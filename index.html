@@ -21,21 +21,17 @@
       provident.
     </p>
 
-    <input
-      type="button"
-      value="Day"
-      onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black'"
-    />
-    <input
-      type="button"
-      value="Night"
-      onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    "
-    />
+    <input type="button" value="Day" onclick="
+      if(document.querySelector('input').value === 'Day'){
+        document.querySelector('input').value='Night'
+        document.querySelector('body').style.backgroundColor='black'
+        document.querySelector('body').style.color='white'
+      }else{
+        document.querySelector('input').value='Day'
+        document.querySelector('body').style.backgroundColor='white'
+        document.querySelector('body').style.color='black'
+      }
+    ">
 
     <ul>
       <li>I'm</li>
@@ -43,7 +39,5 @@
       <li>Sleep...</li>
     </ul>
 
-    <p>나 자신에게 과제를 하나 줍니다.</p>
-    <p>버튼을 하나로 통일하기(누를떄마다 버튼 이름도 바뀌게 하기 :)</p>
   </body>
 </html>
