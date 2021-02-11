@@ -12,7 +12,7 @@
     </style>
   </head>
   <body>
-    <h1>Day :)</h1>
+    <h1>Welcome :D</h1>
 
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero nam
@@ -21,26 +21,14 @@
       provident.
     </p>
 
-    <input type="button" value="Day" onclick="
-      if(document.querySelector('input').value === 'Day'){
-        document.querySelector('input').value='Night'
-        document.querySelector('h1').textContent='Night :o'
-        document.querySelector('body').style.backgroundColor='#2c3e50'
-        document.querySelector('body').style.color='#ecf0f1'
-      }else{
-        document.querySelector('input').value='Day'
-        document.querySelector('body').style.backgroundColor='#ecf0f1'
-        document.querySelector('body').style.color='#2c3e50'
-        document.querySelector('h1').textContent='Day :)'
-      }
-    ">
+    <input type="button" value="Night" onclick="dayAndNight()"/>
 
     <ul>
       <li>I'm</li>
       <li>not</li>
-      <li>Sleep...</li>
+      <li>sleep...</li>
       <li>maybe..</li>
     </ul>
-
+    <script src="script.js"></script>
   </body>
 </html>
